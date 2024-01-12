@@ -1,0 +1,100 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/header3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.clearfix:after{
+	content:".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto ;
+}
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;	
+	text-transform: uppercase;
+	font-weight: lighter;
+
+}
+.btn{
+	display: inline-table;
+	margin:10px;
+	padding: 10px 30px; 
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color o.2;
+}
+.btn-full{
+	background-color: transparent;
+	color: #fff;
+	margin-block-start: 5px;
+	border: 1px solid #fff;
+
+}
+.btn-full:hover{
+	background-color: #bf55ec;
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+.maindiv{
+	width: 20%;
+	height: 300px;
+	position: absolute;
+	left: 70%;
+	top: 40%;
+	transform: translate(-40%,-40%);
+	background-image: url(../images/cake.jpeg);
+	background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 6px #bf55ec ;
+	animation: slider 15s infinite linear;
+}
+@keyframes slider{
+	0%{ background-image: url(../images/cake.jpeg); }
+
+	35%{ background-image: url(../images/cake\ 2.jpg); }
+
+	75%{ background-image: url(../images/cake\ 3.jpg); }
+}

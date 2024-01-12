@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/coffee.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.clearfix:after{
+	content:".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto ;
+}
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    
+}
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;	
+	text-transform: uppercase;
+	font-weight: lighter;
+
+}
+.btn{
+	display: inline-table;
+	margin:10px;
+	padding: 10px 30px; 
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color o.2;
+}
+.btn-full{
+	background-color: transparent;
+	color: #fff;
+	margin-block-start: 5px;
+	border: 1px solid #fff;
+
+}
+.btn-full:hover{
+	background-color: #bf55ec;
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
